@@ -1,5 +1,6 @@
 module.exports = {
-  publicPath: '/wedding/',
+  outputDir: './docs',
+  publicPath: '/UKKIDOKI.github.io/',
   css: {
     loaderOptions: {
       scss: {
