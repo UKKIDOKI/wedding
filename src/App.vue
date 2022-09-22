@@ -1,27 +1,25 @@
-
-
 <template>
   <div id="kyong">
-    <FlowerRain />
-    <IntroMovie />
-    <Live />
-    <Divider />
-    <Gallery />
-    <Divider />
-    <Celebrate @click="handleClick" :presents="presents" />
-    <Divider />
-    <Map />
-    <Divider />
-    <Funding />
-    <Divider />
+    <FlowerRain/>
+    <IntroMovie/>
+    <Live/>
+    <Divider/>
+    <Gallery/>
+    <Divider/>
+    <Celebrate @click="handleClick" :presents="presents"/>
+    <Divider/>
+    <Map/>
+    <Divider/>
+
+    <Divider/>
     <div style="display: none">
-      <Credit />
+
     </div>
     <BottomSheet
-      :is-open="isOpen"
-      @close="handleClose"
-      v-scroll-lock="isOpen"
-      :present="selectedPresent"
+        :is-open="isOpen"
+        @close="handleClose"
+        v-scroll-lock="isOpen"
+        :present="selectedPresent"
     />
   </div>
 </template>
@@ -30,8 +28,6 @@
 import IntroMovie from "./components/IntroMovie.vue";
 import Live from "./components/Live.vue";
 import Gallery from "./components/Gallery.vue";
-import Funding from "./components/Funding.vue";
-import Credit from "./components/Credit.vue";
 import Celebrate from "./components/Celebrate.vue";
 import Map from "./components/Map.vue";
 import FlowerRain from "./components/FlowerRain.vue";
@@ -44,8 +40,6 @@ export default {
     IntroMovie,
     Live,
     Gallery,
-    Funding,
-    Credit,
     Celebrate,
     FlowerRain,
     BottomSheet,
@@ -88,11 +82,11 @@ export default {
 <style>
 @font-face {
   font-family: "Cafe24Oneprettynight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 html,
 body,
 div,
@@ -181,6 +175,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -194,17 +189,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -212,10 +211,12 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 button {
   margin: 0;
   padding: 0;
@@ -223,9 +224,11 @@ button {
   border: none;
   font: inherit;
 }
+
 * {
   box-sizing: border-box;
 }
+
 #kyong {
   font-family: "Cafe24Oneprettynight", sans-serif;
   max-width: 460px;

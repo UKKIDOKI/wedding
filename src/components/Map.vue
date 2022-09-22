@@ -52,7 +52,7 @@ export default {
       scrollX: 0,
       width: 320,
       appKey: '13820f5d51d54f2bfb5203278b7bf8b9', // 테스트용 appkey
-      center: {lat: 37.4987, lng: 127.0316}, // 지도의 중심 좌표
+      center: {lat: 35.9066, lng: 128.6072}, // 지도의 중심 좌표
       level: 3, // 지도의 레벨(확대, 축소 정도),
       mapTypeId: VueDaumMap.MapTypeId.NORMAL, // 맵 타입
       libraries: ["drawing"], // 추가로 불러올 라이브러리
@@ -85,10 +85,10 @@ export default {
     },
     makeUrls() {
       // 장소데이터의 이름정보 불러온 뒤
-      const locationName = "힐링페이퍼"
+      const locationName = "노비아갈라 전자관"
       this.tmapUrl = "tmap://search?name=" + locationName
       this.kakaoTaxiUrl = "https://t.kakao.com/launch?type=taxi&amp;dest_lat=37.49878007763176&amp;dest_lng=127.03170076652506&amp;ref=localweb"
-      this.navermapUrl = "nmap://search?query=" + locationName + "&appname=kimyoon21.github.io/wedding"
+      this.navermapUrl = "nmap://search?query=" + locationName + "&appname=ukkidoki.github.io/wedding"
       this.kakaomapUrl = "kakaomap://search?q=" + locationName
     }
   }
