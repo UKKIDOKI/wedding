@@ -87,7 +87,7 @@ export default {
       // 장소데이터의 이름정보 불러온 뒤
       const locationName = "노비아갈라 전자관"
       this.tmapUrl = "tmap://search?name=" + locationName
-      this.kakaoTaxiUrl = "https://t.kakao.com/launch?type=taxi&amp;dest_lat=37.49878007763176&amp;dest_lng=127.03170076652506&amp;ref=localweb"
+      this.kakaoTaxiUrl = "https://t.kakao.com/launch?type=taxi&amp;dest_lat=35.90664269598032&amp;dest_lng=128.60720361060547&amp;ref=localweb"
       this.navermapUrl = "nmap://search?query=" + locationName + "&appname=ukkidoki.github.io/wedding"
       this.kakaomapUrl = "kakaomap://search?q=" + locationName
     }
