@@ -1,0 +1,14 @@
+/*.snow-bg {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    z-index: 2;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    pointer-events: none;*/
+/*    background-image: url(public/img/floral/sakura-1.png),url(public/img/floral/sakura-2.png);*/
+/*    -webkit-animation: snow 10s linear infinite;*/
+/*    animation: snow 10s linear infinite*/
+/*}*/
