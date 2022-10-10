@@ -31,9 +31,10 @@
                   </div>
                 </div>
               </div>
+<!--              메인이미지-->
               <div class="q-py-lg">
                 <div style="position:relative;width:100%;" class="no-event"><img
-                    src="/img/gallery/HYW09498.jpg"
+                    v-bind:src="imageUrls[1]"
                     style="width:100%;"><!----></div>
               </div>
               <div class="text-center">
@@ -258,50 +259,22 @@
                           <div class="q-date__calendar-days-container relative-position overflow-hidden">
                             <div class="q-date__calendar-days fit">
                               <div class="q-date__calendar-item q-date__calendar-item--fill">
-                                <div>25</div>
-                              </div>
-                              <div class="q-date__calendar-item q-date__calendar-item--fill">
-                                <div>26</div>
-                              </div>
-                              <div class="q-date__calendar-item q-date__calendar-item--fill">
-                                <div>27</div>
-                              </div>
-                              <div class="q-date__calendar-item q-date__calendar-item--fill">
-                                <div>28</div>
-                              </div>
-                              <div class="q-date__calendar-item q-date__calendar-item--fill">
-                                <div>29</div>
-                              </div>
-                              <div class="q-date__calendar-item q-date__calendar-item--fill">
                                 <div>30</div>
                               </div>
-                              <div class="q-date__calendar-item q-date__calendar-item--in">
-                                <button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
-                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
-                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                    class="block">1</span></span></button>
+                              <div class="q-date__calendar-item q-date__calendar-item--fill">
+                                <div>31</div>
                               </div>
                               <div class="q-date__calendar-item q-date__calendar-item--in">
-                                <button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
-                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
-                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                    class="block">2</span></span></button>
+                                <div>1</div>
                               </div>
                               <div class="q-date__calendar-item q-date__calendar-item--in">
-                                <button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
-                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
-                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                    class="block">3</span></span></button>
+                                <div>2</div>
                               </div>
                               <div class="q-date__calendar-item q-date__calendar-item--in">
-                                <button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
-                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
-                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
-                                    class="block">4</span></span></button>
+                                <div>3</div>
+                              </div>
+                              <div class="q-date__calendar-item q-date__calendar-item--in">
+                                <div>4</div>
                               </div>
                               <div class="q-date__calendar-item q-date__calendar-item--in">
                                 <button
@@ -340,7 +313,7 @@
                               </div>
                               <div class="q-date__calendar-item q-date__calendar-item--in">
                                 <button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense q-date__today"
+                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
                                     style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
                                     class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
                                     class="block">10</span></span></button>
@@ -368,7 +341,7 @@
                               </div>
                               <div class="q-date__calendar-item q-date__calendar-item--in">
                                 <button
-                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
+                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense q-date__today"
                                     style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
                                     class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
                                     class="block">14</span></span></button>
@@ -485,7 +458,35 @@
                                     class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
                                     class="block">30</span></span></button>
                               </div>
-                              <div class="q-date__calendar-item q-date__calendar-item--in">
+                              <div class="q-date__calendar-item q-date__calendar-item--fill">
+                                <button
+                                    class="q-btn q-btn-item non-selectable no-outline q-btn--unelevated q-btn--rectangle bg-primary text-white q-btn--actionable q-focusable q-hoverable q-btn--dense"
+                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
+                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                    class="block">27</span></span></button>
+                              </div>
+                              <div class="q-date__calendar-item q-date__calendar-item--fill">
+                                <button
+                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
+                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
+                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                    class="block">28</span></span></button>
+                              </div>
+                              <div class="q-date__calendar-item q-date__calendar-item--fill">
+                                <button
+                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
+                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
+                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                    class="block">29</span></span></button>
+                              </div>
+                              <div class="q-date__calendar-item q-date__calendar-item--fill">
+                                <button
+                                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
+                                    style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
+                                    class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
+                                    class="block">30</span></span></button>
+                              </div>
+                              <div class="q-date__calendar-item q-date__calendar-item--fill">
                                 <button
                                     class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--dense"
                                     style="" tabindex="-1" type="button"><span class="q-focus-helper"></span><span
@@ -521,7 +522,7 @@
                 <div>
                   <div class="t-font-a" style="opacity: 1; transform: translateY(50px); transition: all 0s ease;">
                     <div style="letter-spacing:0.05em;">재욱 <span style="color:#DFD3D3b3;"> ♥ </span> 은희의 결혼식까지
-                      12일 남았습니다.
+                      47일 남았습니다.
                     </div><!----></div><!----></div>
               </div>
             </div>
@@ -893,7 +894,7 @@
                                   <div class="col-8 text-left" style="font-size:14px;">김재욱</div>
                                   <div class="col-4 kakao-pay-button content-center column cursor-pointer"
                                        onclick="location.href ='https://qr.kakaopay.com/Ej8XuaP3C'">
-                                    <img height="25" src="/img/images/kakao-pay-black.c698e475.png"
+                                    <img height="25"   v-bind:src="KakaoImage[0]"
                                          style="padding:3px;"></div>
                                 </div>
                               </div>
@@ -948,7 +949,7 @@
                                   <div class="col-8 text-left" style="font-size:14px;">김은희</div>
                                   <div class="col-4 kakao-pay-button content-center column cursor-pointer"
                                        onclick="location.href ='https://qr.kakaopay.com/FK0uNsVde'"><img
-                                      height="25" src="/img/images/kakao-pay-black.c698e475.png" style="padding:3px;">
+                                      height="25"  v-bind:src="KakaoImage[0]" style="padding:3px;">
                                   </div>
                                 </div>
                               </div>
@@ -1016,6 +1017,7 @@
 
 <script>
 import Map from "./Map";
+import Kimage from "../assets/kakao-pay-black.c698e475.png"
 import image1 from "../assets/gallery/HYW09498.jpg"
 import image2 from "../assets/gallery/HYW09305.jpg"
 import image3 from "../assets/gallery/HYW09384.jpg"
@@ -1039,6 +1041,9 @@ export default {
       end_x: 0,
       IMAGE_WIDTH: 0,
       images: null,
+      KakaoImage: [
+        Kimage
+      ],
       imageUrls: [
         image3,
         image1,
