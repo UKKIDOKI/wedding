@@ -1,6 +1,6 @@
 module.exports = {
   outputDir: './docs',
-  // publicPath: '/wedding/',
+  publicPath: '/wedding/',
   css: {
     loaderOptions: {
     },
