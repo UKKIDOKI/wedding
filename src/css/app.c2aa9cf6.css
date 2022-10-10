@@ -1,0 +1,23 @@
+@font-face {
+    font-display: block;
+    font-family: GowunDodum;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.f54bbe10.woff2)
+}
+
+@font-face {
+    font-display: block;
+    font-family: GowunBatang;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/GowunBatangRegular.a343175f.woff2)
+}
+
+@font-face {
+    font-display: block;
+    font-family: PinyonScript;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/PinyonScriptRegular.15678c38.woff2)
+}
