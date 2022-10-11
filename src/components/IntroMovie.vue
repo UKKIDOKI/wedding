@@ -143,6 +143,115 @@
                     class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
                     class="block">연락하기</span></span></button>
               </div>
+              <div class="q-card parentContactPopup">
+                <div class="q-card__section q-card__section--vert row items-center auto bg-grey-3">
+                  <div class="q-space"></div>
+                  <div class="text-subtitle1 t-font-d">연락하기</div>
+                  <div class="q-space"></div>
+                </div>
+                <div class="q-card__section q-card__section--vert">
+                  <div class="column text-center">
+                    <div class="row">
+                      <div class="col-12 column">
+                        <div class="row items-center">
+                          <div class="col-4">
+                            <div class="t-font-d text-center" style="color: rgb(135, 155, 158);">신랑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                          </div>
+                          <div class="col-4 t-font-d">김재욱</div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);">call</i></div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);">mail</i></div>
+                        </div>
+                        <div class="row items-center">
+                          <div class="col-4">
+                            <div class="t-font-d text-center" style="color: rgb(135, 155, 158);">신랑 아버지</div>
+                          </div>
+                          <div class="col-4 t-font-d">김종덕</div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);">call</i></div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);">mail</i></div>
+                        </div>
+                        <div class="row items-center">
+                          <div class="col-4">
+                            <div class="t-font-d text-center" style="color: rgb(135, 155, 158);">신랑 어머니</div>
+                          </div>
+                          <div class="col-4 t-font-d">김경숙</div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);">call</i></div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);">mail</i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="q-separator q-separator--horizontal q-separator--horizontal-inset"
+                        aria-orientation="horizontal" style="margin: 20px;">
+                    <div class="row">
+                      <div class="col-12 column">
+                        <div class="row items-center">
+                          <div class="col-4">
+                            <div class="t-font-d text-center" style="color: rgb(200, 146, 156);">신부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                          </div>
+                          <div class="col-4 t-font-d">김은희</div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);">call</i></div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);">mail</i></div>
+                        </div>
+                        <div class="row items-center">
+                          <div class="col-4">
+                            <div class="t-font-d text-center" style="color: rgb(200, 146, 156);">신부 아버지</div>
+                          </div>
+                          <div class="col-4 t-font-d">김영배</div>
+                          <div class="col-2">
+                            <a
+                                class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                                aria-hidden="true" role="presentation"
+                                style="font-size: 24px; color: rgb(200, 146, 156);"
+                                href="tel:010-3300-7759"> call</a></div>
+                          <div class="col-2">
+                            <a
+                                class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                                aria-hidden="true" role="presentation"
+                                style="font-size: 24px; color: rgb(200, 146, 156);"
+                                href="message:010-3300-7759">mail</a></div>
+                        </div>
+                        <div class="row items-center">
+                          <div class="col-4">
+                            <div class="t-font-d text-center" style="color: rgb(200, 146, 156);">신부 어머니</div>
+                          </div>
+                          <div class="col-4 t-font-d">권순화</div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);">call</i></div>
+                          <div class="col-2"><i
+                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                              aria-hidden="true" role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);">mail</i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper" style="order:3;">
               <div style="margin-top:1rem;"></div>
@@ -975,7 +1084,7 @@
                   <div class="q-pt-xs q-pb-sm t-font-a">카카오톡 공유</div>
                 </div>
                 <div class="col column items-center cursor-pointer"
-                @click="CopyLink">
+                     @click="CopyLink">
                   <div>
                     <div class="q-avatar" style="">
                       <div class="q-avatar__content row flex-center overflow-hidden" style=""><img class="q-pa-xs"
@@ -1014,7 +1123,7 @@ export default {
   },
   data() {
     return {
-      nowLink : '',
+      nowLink: '',
       copyData: [],
       btnClick: false,
       btnClick1: false,
@@ -1056,7 +1165,7 @@ export default {
   },
   methods: {
     CopyLink() {
-      this.$copyText( this.nowLink).then(function (e) {
+      this.$copyText(this.nowLink).then(function (e) {
         alert("페이지 주소가 복사되었습니다.\n" + e.text);
       });
     },
