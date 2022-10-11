@@ -4,10 +4,6 @@
       <div class="background">
         <div class="q-layout q-layout--standard" style="min-height: 844px;"><!----><!---->
           <div class="column no-wrap skin"><!----><!---->
-            <div class="text-right q-pt-xs q-pr-xs q-pb-md" style="position:sticky;top:0;z-index:999;">
-              <i
-                  class="q-icon text-grey-7 notranslate material-icons" style="font-size:18px;" aria-hidden="true"
-                  role="presentation">volume_off</i></div>
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
                  style="margin-top:1.5rem;">
               <div class="text-center t-font-b" style="margin-bottom:20px;color:#7C7575;"> Join us to celebrate<br>
@@ -31,7 +27,7 @@
                   </div>
                 </div>
               </div>
-<!--              메인이미지-->
+              <!--              메인이미지-->
               <div class="q-py-lg">
                 <div style="position:relative;width:100%;" class="no-event"><img
                     v-bind:src="imageUrls[1]"
@@ -827,6 +823,10 @@
                         <div class="t-font-a q-mt-xs text-left">
                           <div><b>버스</b><br>•300, 304, 306, 323, 323-1, 349, 413, 503, 305 <br> &nbsp;&nbsp;&nbsp; 순환2,
                             순환2-1, 706, 653, 937, 623, 북구2
+                            <br>
+                            <br>
+                            <b>주차장</b>
+                            :&nbsp;노비아갈라 전자관 4층&nbsp;주차장 <br>
                           </div>
                         </div>
                       </div>
@@ -872,7 +872,7 @@
 
                         <div class="q-focus-helper" tabindex="-1"></div>
                         <div class="q-item__section column q-item__section--main justify-center">
-                          <div style="" class="q-item__label">신랑측 계좌번호</div><!----></div>
+                          <div style="" class="q-item__label">신랑 계좌번호</div><!----></div>
                         <div
                             class="q-item__section column q-item__section--side justify-center q-focusable relative-position cursor-pointer text-white">
                           <i class="q-icon notranslate material-icons q-expansion-item__toggle-icon" style=""
@@ -884,33 +884,25 @@
                             <div>
                               <div class="col-12">
                                 <div class="row">
-                                  <div class="col-8 text-left" style="font-size:14px;">카카오뱅크 3333-13-1239662</div>
+                                  <div class="col-8 text-left" style="font-size:14px;"
+                                       ref="getData">카카오뱅크 3333-13-1239662
+                                  </div>
                                   <div
                                       class="col-4 copy-button justify-center cursor-pointer q-pa-xs q-mb-sm text-center"
-                                      color="primary">복사하기
+                                      color="primary"
+                                      @click="Copy">복사하기
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="col-8 text-left" style="font-size:14px;">김재욱</div>
                                   <div class="col-4 kakao-pay-button content-center column cursor-pointer"
                                        onclick="location.href ='https://qr.kakaopay.com/Ej8XuaP3C'">
-                                    <img height="25"   v-bind:src="KakaoImage[0]"
+                                    <img height="25" v-bind:src="KakaoImage[0]"
                                          style="padding:3px;"></div>
                                 </div>
                               </div>
                             </div>
                             <div>
-                              <!--                              <div class="col-12">-->
-                              <!--                                <div class="row">-->
-                              <!--                                  <div class="col-8 text-left" style="font-size:14px;">농협 23202007774</div>-->
-                              <!--                                  <div-->
-                              <!--                                      class="col-4 copy-button justify-center cursor-pointer q-pa-xs q-mb-sm text-center"-->
-                              <!--                                      color="primary">복사하기-->
-                              <!--                                  </div>-->
-                              <!--                                </div>-->
-                              <!--                                <div class="row">-->
-                              <!--                                  <div class="col-8 text-left" style="font-size:14px;">김민언</div>&lt;!&ndash;&ndash;&gt;</div>-->
-                              <!--                              </div>-->
                             </div><!--]--></div>
                         </div>
                       </div>
@@ -927,7 +919,7 @@
                           style="background-color: #DFD3D3b3; padding-left: 50px;" tabindex="0">
                         <div class="q-focus-helper" tabindex="-1"></div>
                         <div class="q-item__section column q-item__section--main justify-center">
-                          <div style="" class="q-item__label">신부측 계좌번호</div><!----></div>
+                          <div style="" class="q-item__label">신부 계좌번호</div><!----></div>
                         <div
                             class="q-item__section column q-item__section--side justify-center q-focusable relative-position cursor-pointer text-white">
                           <i class="q-icon notranslate material-icons q-expansion-item__toggle-icon" style=""
@@ -939,9 +931,12 @@
                             <div>
                               <div class="col-12">
                                 <div class="row">
-                                  <div class="col-8 text-left" style="font-size:14px;">카카오뱅크 3333-08-0665036</div>
+                                  <div class="col-8 text-left" style="font-size:14px;"
+                                       ref="getData1">카카오뱅크 3333-08-0665036
+                                  </div>
                                   <div
-                                      class="col-4 copy-button justify-center cursor-pointer q-pa-xs q-mb-sm text-center">
+                                      class="col-4 copy-button justify-center cursor-pointer q-pa-xs q-mb-sm text-center"
+                                      @click="Copy1">
                                     복사하기
                                   </div>
                                 </div>
@@ -949,24 +944,9 @@
                                   <div class="col-8 text-left" style="font-size:14px;">김은희</div>
                                   <div class="col-4 kakao-pay-button content-center column cursor-pointer"
                                        onclick="location.href ='https://qr.kakaopay.com/FK0uNsVde'"><img
-                                      height="25"  v-bind:src="KakaoImage[0]" style="padding:3px;">
+                                      height="25" v-bind:src="KakaoImage[0]" style="padding:3px;">
                                   </div>
                                 </div>
-                              </div>
-                              <hr class="q-separator q-separator--horizontal seperator"
-                                  style="background-color: #DFD3D3b3;" aria-orientation="horizontal">
-                            </div>
-                            <div>
-                              <div class="col-12">
-                                <div class="row">
-                                  <div class="col-8 text-left" style="font-size:14px;">대구은행063-08-041108</div>
-                                  <div
-                                      class="col-4 copy-button justify-center cursor-pointer q-pa-xs q-mb-sm text-center">
-                                    복사하기
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-8 text-left" style="font-size:14px;">김영배</div><!----></div>
                               </div>
                             </div>
                             <div>
@@ -994,7 +974,8 @@
                   </div>
                   <div class="q-pt-xs q-pb-sm t-font-a">카카오톡 공유</div>
                 </div>
-                <div class="col column items-center cursor-pointer">
+                <div class="col column items-center cursor-pointer"
+                @click="CopyLink">
                   <div>
                     <div class="q-avatar" style="">
                       <div class="q-avatar__content row flex-center overflow-hidden" style=""><img class="q-pa-xs"
@@ -1033,6 +1014,8 @@ export default {
   },
   data() {
     return {
+      nowLink : '',
+      copyData: [],
       btnClick: false,
       btnClick1: false,
       curPos: 0,
@@ -1060,13 +1043,34 @@ export default {
       return imgWidth;
     },
   },
-  mounted: function () {
+  mounted() {
+    this.nowLink = document.location.href;
+    console.log(this.$refs.getData)
+    console.log(this.$refs.getData1)
+    this.copyData.push(this.$refs.getData.innerHTML);
+    this.copyData.push(this.$refs.getData1.innerHTML);
     this.IMAGE_WIDTH = this.getImageWidth;
     this.images = document.querySelector(".images");
     this.images.addEventListener("touchstart", this.touch_start);
     this.images.addEventListener("touchend", this.touch_end);
   },
   methods: {
+    CopyLink() {
+      this.$copyText( this.nowLink).then(function (e) {
+        alert("페이지 주소가 복사되었습니다.\n" + e.text);
+      });
+    },
+    Copy() {
+      console.log()
+      this.$copyText(this.copyData[0]).then(function (e) {
+        alert("계좌번호가 복사되었습니다.\n" + e.text);
+      });
+    }, Copy1() {
+      console.log()
+      this.$copyText(this.copyData[1]).then(function (e) {
+        alert("계좌번호가 복사되었습니다.\n" + e.text);
+      });
+    },
     kakaoLink() {
       window.Kakao.Link.sendDefault({
             objectType: 'feed',
@@ -1127,10 +1131,8 @@ export default {
       if (this.start_x > this.end_x) this.next();
       else this.prev();
     }
-    ,
-  },
-};
-
+  }
+}
 </script>
 <style>
 @import "../css/vendor.dbb2073d.css";

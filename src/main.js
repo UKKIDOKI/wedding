@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'
 import VueClipboard from 'vue-clipboard2'
 
 Vue.config.productionTip = false
+VueClipboard.config.autoSetContainer = true;
 
 Vue.use(VScrollLock)
 Vue.use(VueClipboard)
