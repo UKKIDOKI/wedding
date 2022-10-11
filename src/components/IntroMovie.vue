@@ -39,6 +39,9 @@
               </div>
             </div><!---->
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
+                 data-aos="fade-up"
+                 data-aos-duration="2000"
+
                  style="order:0;margin-left:0;margin-right:0;">
               <div class="text-center">
                 <div class="t-font-b" style="opacity: 1; transform: translateY(50px); transition: all 0s ease;">
@@ -82,6 +85,9 @@
               <div style="margin-top:1rem;"></div>
             </div>
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
+                 data-aos="fade-up"
+                 data-aos-duration="2000"
+
                  style="order:1;margin-left:0px;margin-right:0px;">
               <div class="text-center">
                 <div style="opacity: 1; transform: translateY(50px); transition: all 0s ease;">
@@ -134,19 +140,24 @@
               </div>
             </div>
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
+                 data-aos="fade-up"
+                 data-aos-duration="2000"
+
                  style="order:2;margin-top:0rem;">
               <div class="text-center">
-                <button
-                    class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--rounded q-btn--actionable q-focusable q-hoverable parentContactButton t-font-b"
-                    style="opacity: 1; transform: translateY(50px); transition: all 0s ease;" tabindex="0"
-                    type="button"><span class="q-focus-helper"></span><span
+                <button @click="Call"
+                        class="q-btn q-btn-item non-selectable no-outline q-btn--flat q-btn--rectangle q-btn--rounded q-btn--actionable q-focusable q-hoverable parentContactButton t-font-b"
+                        style="opacity: 1; transform: translateY(50px); transition: all 0s ease;" tabindex="0"
+                        type="button"><span class="q-focus-helper"></span><span
                     class="q-btn__content text-center col items-center q-anchor--skip justify-center row"><span
                     class="block">연락하기</span></span></button>
               </div>
-              <div class="q-card parentContactPopup">
+              <div class="q-card parentContactPopup" v-show="calling">
                 <div class="q-card__section q-card__section--vert row items-center auto bg-grey-3">
                   <div class="q-space"></div>
-                  <div class="text-subtitle1 t-font-d">연락하기</div>
+                  <div class="text-subtitle1 t-font-d"
+                       @click="Call()">연락하기
+                  </div>
                   <div class="q-space"></div>
                 </div>
                 <div class="q-card__section q-card__section--vert">
@@ -158,42 +169,51 @@
                             <div class="t-font-d text-center" style="color: rgb(135, 155, 158);">신랑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                           </div>
                           <div class="col-4 t-font-d">김재욱</div>
-                          <div class="col-2"><i
+                          <div class="col-2"><a
                               class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(135, 155, 158);">call</i></div>
-                          <div class="col-2"><i
+                              role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);"
+                              href="tel:010-3482-0119">call</a></div>
+                          <div class="col-2"><a
                               class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(135, 155, 158);">mail</i></div>
+                              role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);"
+                              href="sms:010-3482-0119">mail</a></div>
                         </div>
                         <div class="row items-center">
                           <div class="col-4">
                             <div class="t-font-d text-center" style="color: rgb(135, 155, 158);">신랑 아버지</div>
                           </div>
                           <div class="col-4 t-font-d">김종덕</div>
-                          <div class="col-2"><i
-                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(135, 155, 158);">call</i></div>
-                          <div class="col-2"><i
-                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(135, 155, 158);">mail</i></div>
+                          <div class="col-2">
+                            <a
+                                class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                                role="presentation"
+                                style="font-size: 24px; color: rgb(135, 155, 158);"
+                                href="tel:010-3521-5029">call</a></div>
+                          <div class="col-2">
+                            <a
+                                class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                                role="presentation"
+                                style="font-size: 24px; color: rgb(135, 155, 158);"
+                                href="sms:010-3521-5029">mail</a></div>
                         </div>
                         <div class="row items-center">
                           <div class="col-4">
                             <div class="t-font-d text-center" style="color: rgb(135, 155, 158);">신랑 어머니</div>
                           </div>
                           <div class="col-4 t-font-d">김경숙</div>
-                          <div class="col-2"><i
+                          <div class="col-2">
+                            <a
+                                class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
+                                role="presentation"
+                                style="font-size: 24px; color: rgb(135, 155, 158);"
+                                href="tel:010-4506-1173">call</a></div>
+                          <div class="col-2"><a
                               class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(135, 155, 158);">call</i></div>
-                          <div class="col-2"><i
-                              class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(135, 155, 158);">mail</i></div>
+                              role="presentation"
+                              style="font-size: 24px; color: rgb(135, 155, 158);"
+                              href="sms:010-4506-1173">mail</a></div>
                         </div>
                       </div>
                     </div>
@@ -206,14 +226,16 @@
                             <div class="t-font-d text-center" style="color: rgb(200, 146, 156);">신부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                           </div>
                           <div class="col-4 t-font-d">김은희</div>
-                          <div class="col-2"><i
+                          <div class="col-2"><a
                               class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(200, 146, 156);">call</i></div>
-                          <div class="col-2"><i
+                              role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);"
+                              href="tel:010-5789-7449">call</a></div>
+                          <div class="col-2"><a
                               class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(200, 146, 156);">mail</i></div>
+                              role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);"
+                              href="sms:010-5789-7449">mail</a></div>
                         </div>
                         <div class="row items-center">
                           <div class="col-4">
@@ -223,29 +245,31 @@
                           <div class="col-2">
                             <a
                                 class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                                aria-hidden="true" role="presentation"
+                                role="presentation"
                                 style="font-size: 24px; color: rgb(200, 146, 156);"
                                 href="tel:010-3300-7759"> call</a></div>
                           <div class="col-2">
                             <a
                                 class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                                aria-hidden="true" role="presentation"
+                                role="presentation"
                                 style="font-size: 24px; color: rgb(200, 146, 156);"
-                                href="message:010-3300-7759">mail</a></div>
+                                href="sms:010-3300-7759">mail</a></div>
                         </div>
                         <div class="row items-center">
                           <div class="col-4">
                             <div class="t-font-d text-center" style="color: rgb(200, 146, 156);">신부 어머니</div>
                           </div>
                           <div class="col-4 t-font-d">권순화</div>
-                          <div class="col-2"><i
+                          <div class="col-2"><a
                               class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(200, 146, 156);">call</i></div>
-                          <div class="col-2"><i
+                              role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);"
+                              href="tel:010-3300-7449">call</a></div>
+                          <div class="col-2"><a
                               class="q-icon notranslate material-icons t-font-d text-center cursor-pointer"
-                              aria-hidden="true" role="presentation"
-                              style="font-size: 24px; color: rgb(200, 146, 156);">mail</i></div>
+                              role="presentation"
+                              style="font-size: 24px; color: rgb(200, 146, 156);"
+                              href="sms:010-3300-7449">mail</a></div>
                         </div>
                       </div>
                     </div>
@@ -253,7 +277,10 @@
                 </div>
               </div>
             </div>
-            <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper" style="order:3;">
+            <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
+                 data-aos="fade-up"
+                 data-aos-duration="2000"
+                 style="order:3;">
               <div style="margin-top:1rem;"></div>
               <div class="text-center custom-calendar">
                 <div>
@@ -627,13 +654,16 @@
                 <div>
                   <div class="t-font-a" style="opacity: 1; transform: translateY(50px); transition: all 0s ease;">
                     <div style="letter-spacing:0.05em;">재욱 <span style="color:#DFD3D3b3;"> ♥ </span> 은희의 결혼식까지
-                      47일 남았습니다.
+                      {{ this.Dday }}일 남았습니다.
                     </div><!----></div><!----></div>
               </div>
             </div>
 
 
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
+                 data-aos="fade-up"
+                 data-aos-duration="2000"
+
                  style="order:4;margin-left:0;margin-right:0;">
               <div style="margin-top:1rem;"></div>
               <div class="text-center">
@@ -669,7 +699,10 @@
             </div>
 
 
-            <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper" style="order:5;">
+            <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
+                 data-aos="fade-up"
+                 data-aos-duration="2000"
+                 style="order:5;">
               <div class="text-center">
                 <div class="text-handwriting t-color-main"
                      style="opacity: 1;  transform: translateY(50px); transition: all 0s ease;">Location
@@ -943,7 +976,10 @@
                     <br></div><!--]--></div>
               </div>
             </div><!----><!----><!----><!----><!---->
-            <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper" style="order:7;">
+            <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
+                 data-aos="fade-up"
+                 data-aos-duration="2000"
+                 style="order:7;">
               <div class="text-center">
                 <div style="margin-top:2.5rem;"></div><!---->
                 <div style="opacity: 1; transform: translateY(50px); transition: all 0s ease;"><img
@@ -1114,7 +1150,7 @@ import image3 from "../assets/gallery/HYW09384.jpg"
 import image4 from "../assets/gallery/HYW09470.jpg"
 import image5 from "../assets/gallery/HYW09542.jpg"
 import image6 from "../assets/gallery/HYW09536.jpg"
-
+// import dayjs from 'dayjs'
 
 export default {
   name: "Main",
@@ -1123,6 +1159,8 @@ export default {
   },
   data() {
     return {
+      calling: false,
+      Dday: '',
       nowLink: '',
       copyData: [],
       btnClick: false,
@@ -1145,6 +1183,8 @@ export default {
         image6
       ],
     };
+  }, created() {
+    this.diffDay()
   },
   computed: {
     getImageWidth: () => {
@@ -1153,6 +1193,7 @@ export default {
     },
   },
   mounted() {
+    console.log(this.Dday)
     this.nowLink = document.location.href;
     console.log(this.$refs.getData)
     console.log(this.$refs.getData1)
@@ -1164,6 +1205,16 @@ export default {
     this.images.addEventListener("touchend", this.touch_end);
   },
   methods: {
+    Call() {
+      this.calling === !true ? this.calling = true : this.calling = false
+    },
+    diffDay() {
+      var Dday = new Date(2022, 10, 27);    // D-day(2017년 8월 30일)를 셋팅한다.
+      var now = new Date();                    // 현재(오늘) 날짜를 받아온다.
+      var gap = now.getTime() - Dday.getTime();    // 현재 날짜에서 D-day의 차이를 구한다.
+      var result = Math.floor(gap / (1000 * 60 * 60 * 24)) * -1;    // gap을 일(밀리초 * 초 * 분 * 시간)로 나눈다. 이 때 -1 을 곱해야 날짜차이가 맞게 나온다.
+      this.Dday = result;
+    },
     CopyLink() {
       this.$copyText(this.nowLink).then(function (e) {
         alert("페이지 주소가 복사되었습니다.\n" + e.text);
