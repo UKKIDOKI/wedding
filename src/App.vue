@@ -6,12 +6,11 @@
 
 <script>
 
-import IntroMovie from "./components/IntroMovie.vue";
 
 export default {
   name: "App",
   components: {
-    IntroMovie,
+    'IntroMovie' :() => import('@/components/IntroMovie'),
   },
   data() {
     return {
