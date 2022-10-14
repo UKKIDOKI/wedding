@@ -677,22 +677,7 @@
                      style="opacity: 1; transform: translateY(50px); transition: all 0s ease;">
                   <!--                 이미지앨범-->
                   <div class="image-album">
-                    <div class="images">
-                      <img
-                          class="image"
-                          v-for="imageUrl in imageUrls"
-                          v-bind:key="imageUrl.index"
-                          v-bind:src="imageUrl"
-                      />
-                    </div>
-                    <div v-if="imageUrls.length > 1" class="image-circle-wrapper">
-                      <div
-                          class="image-circle"
-                          v-for="(imageUrl, index) in imageUrls"
-                          v-bind:key="imageUrl.index"
-                          v-bind:class="{ activeImg: index === curPos }"
-                      ></div>
-                    </div>
+                    <carousel />
                   </div>
                 </div><!----><!----></div>
 
@@ -831,7 +816,8 @@
                       </div>
                       <div class="q-expansion-item__content relative-position">
                         <div class="q-card" style="background-color: #DFD3D34d;">
-                          <div class="q-card__section q-card__section--vert" v-show="btnClick"><!--[-->
+                          <div class="q-card__section q-card__section--vert" v-show="btnClick"
+                          ><!--[-->
                             <div>
                               <div class="col-12">
                                 <div class="row">
@@ -878,7 +864,8 @@
                       </div>
                       <div class="q-expansion-item__content relative-position">
                         <div class="q-card" style="background-color: #DFD3D34d;">
-                          <div class="q-card__section q-card__section--vert" v-show="btnClick1"><!--[-->
+                          <div class="q-card__section q-card__section--vert"
+                               v-show="btnClick1"><!--[-->
                             <div>
                               <div class="col-12">
                                 <div class="row">
@@ -948,6 +935,7 @@
 
 
 <script>
+import Carousel from "../components/Carousel";
 import Kimage from "../assets/kakao-pay-black.c698e475.png"
 import image1 from "../assets/gallery/HYW09498.jpg"
 import image2 from "../assets/gallery/HYW09305.jpg"
@@ -959,6 +947,7 @@ import image6 from "../assets/gallery/HYW09536.jpg"
 export default {
   name: "Main",
   components: {
+    Carousel,
     'Map' :() => import('@/components/Map'),
   },
   data() {

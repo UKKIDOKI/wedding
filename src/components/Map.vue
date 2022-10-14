@@ -49,11 +49,12 @@ export default {
   components: {VueDaumMap},
   data() {
     return {
+      draggable: false,
       scrollX: 0,
       width: 320,
       appKey: '79eacd3fa5c7e4d11cab70e53c5a1c12', // 테스트용 appkey
       center: {lat: 35.9066, lng: 128.6072}, // 지도의 중심 좌표
-      level: 3, // 지도의 레벨(확대, 축소 정도),
+      level: 5, // 지도의 레벨(확대, 축소 정도),
       mapTypeId: VueDaumMap.MapTypeId.NORMAL, // 맵 타입
       libraries: ["drawing"], // 추가로 불러올 라이브러리
       map: null, // 지도 객체. 지도가 로드되면 할당됨.
@@ -81,6 +82,7 @@ export default {
         position: map.getCenter()
       });
       // 지도에 마커를 표시합니다
+      map.draggable = false;
       marker.setMap(map);
     },
     makeUrls() {
@@ -116,7 +118,7 @@ export default {
     padding-top: 10px;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 }
