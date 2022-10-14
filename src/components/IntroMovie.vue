@@ -678,6 +678,7 @@
                   <!--                 이미지앨범-->
                   <div class="image-album"
                        id="event-card">
+
                     <carousel />
                   </div>
                 </div><!----><!----></div>
@@ -931,7 +932,6 @@
       </div>
     </div>
   </div>
-
 </template>
 
 
@@ -987,7 +987,7 @@ export default {
     },
   },
   mounted() {
-    this.test()
+    // this.test()
     console.log(this.Dday)
     this.nowLink = document.location.href;
     console.log(this.$refs.getData)
@@ -1000,19 +1000,19 @@ export default {
     this.images.addEventListener("touchend", this.touch_end);
   },
   methods: {
-    test() {
-      const eventCard = document.getElementById("event-card");
-
-
-      eventCard.addEventListener("touchstart",function () {
-        document.body.style.overflow = "hidden";
-      })
-      eventCard.addEventListener("touchend",function () {
-        document.body.style.overflow = "auto";
-      })
-
-
-    },
+    // test() {
+    //   const eventCard = document.getElementById("event-card");
+    //
+    //
+    //   eventCard.addEventListener("touchmove",function () {
+    //     document.body.style.overflow = "hidden";
+    //   })
+    //   eventCard.addEventListener("touchend",function () {
+    //     document.body.style.overflow = "auto";
+    //   })
+    //
+    //
+    // },
     Call() {
       this.calling === !true ? this.calling = true : this.calling = false
     },

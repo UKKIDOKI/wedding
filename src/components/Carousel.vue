@@ -1,36 +1,33 @@
 <template>
-  <VueSlickCarousel v-bind="setting">
-    <div> <img
-    class="image"
-    v-bind:src="imageUrls[0]"
-    /></div>
-    <div> <img
+  <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+    <van-swipe-item><img
+        class="image"
+        v-bind:src="imageUrls[0]"
+    /></van-swipe-item>
+    <van-swipe-item><img
         class="image"
         v-bind:src="imageUrls[1]"
-    /></div>
-    <div> <img
+    /></van-swipe-item>
+    <van-swipe-item><img
         class="image"
         v-bind:src="imageUrls[2]"
-    /></div>
-    <div> <img
+    /></van-swipe-item>
+    <van-swipe-item><img
         class="image"
         v-bind:src="imageUrls[3]"
-    /></div>
-    <div> <img
+    /></van-swipe-item>
+    <van-swipe-item><img
         class="image"
         v-bind:src="imageUrls[4]"
-    /></div>
-    <div> <img
+    /></van-swipe-item>
+    <van-swipe-item><img
         class="image"
         v-bind:src="imageUrls[5]"
-    /></div>
-  </VueSlickCarousel>
+    /></van-swipe-item>
+  </van-swipe>
 </template>
 
 <script>
-import '../css/slick.css'
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import image1 from "../assets/gallery/HYW09498.jpg"
 import image2 from "../assets/gallery/HYW09305.jpg"
 import image3 from "../assets/gallery/HYW09384.jpg"
@@ -39,10 +36,7 @@ import image5 from "../assets/gallery/HYW09542.jpg"
 import image6 from "../assets/gallery/HYW09536.jpg"
 
 export default {
-  name: "Carousel",
-  components: {
-    VueSlickCarousel,
-  },
+  components: {},
   data() {
     return {
       imageUrls: [
@@ -53,49 +47,9 @@ export default {
         image5,
         image6
       ],
-      arrows: false,
-      setting: {
-        draggable: false,
-        dotsClass : "dots_custom",
-        dots : true,
-        autoplay: true,
-        fade: true,
-        autoplaySpeed: 3000,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        arrows: false,
-        edgeFriction: 0.35,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    };
+    }
   },
-  mounted() {
-    // const elements = document.getElementsByClassName("slick-arrow");
-    // Array.from(elements).forEach((element) => {
-    //   element.addEventListener("click", function () {
-    //     const sliderElement = document.getElementsByClassName("slick-slide");
-    //     if (sliderElement.length > 0) {
-    //       sliderElement[0].focus();
-    //     }
-    //   });
-    //   element.addEventListener("mouseover", function () {
-    //     const sliderElement = document.getElementsByClassName("slick-slide");
-    //     if (sliderElement.length > 0) {
-    //       sliderElement[0].focus();
-    //     }
-    //   });
-    //   element.addEventListener("mouseleave", function () {
-    //     const sliderElement = document.getElementsByClassName("slick-slide");
-    //     if (sliderElement.length > 0) {
-    //       sliderElement[0].blur();
-    //     }
-    //   });
-    // });
-  },
-};
+}
 </script>
 
 <style>
@@ -136,6 +90,7 @@ export default {
 .image-circle.activeImg {
   background-color: #404040;
 }
+
 .slick-arrow {
   font-size: 0;
   line-height: 0;
