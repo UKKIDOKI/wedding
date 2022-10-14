@@ -679,7 +679,7 @@
                   <div class="image-album"
                        id="event-card">
 
-                    <carousel />
+                    <carousel/>
                   </div>
                 </div><!----><!----></div>
 
@@ -949,7 +949,7 @@ export default {
   name: "Main",
   components: {
     Carousel,
-    'Map' :() => import('@/components/Map'),
+    'Map': () => import('@/components/Map'),
   },
   data() {
     return {
@@ -981,7 +981,6 @@ export default {
     this.diffDay()
   },
   mounted() {
-    console.log(this.Dday)
     this.nowLink = document.location.href;
     this.copyData.push(this.$refs.getData.innerHTML);
     this.copyData.push(this.$refs.getData1.innerHTML);
@@ -1040,38 +1039,9 @@ export default {
     },
     showPay() {
       this.btnClick != true ? this.btnClick = true : this.btnClick = false;
-    }
-    ,
+    },
     showPay1() {
       this.btnClick1 != true ? this.btnClick1 = true : this.btnClick1 = false;
-    }
-    ,
-    prev() {
-      if (this.curPos > 0) {
-        this.postion += this.IMAGE_WIDTH;
-        this.images.style.transform = `translateX(${this.postion}px)`;
-        this.curPos = this.curPos - 1;
-      }
-    }
-    ,
-    next() {
-      if (this.curPos < this.imageUrls.length - 1) {
-        this.postion -= this.IMAGE_WIDTH;
-        this.images.style.transform = `translateX(${this.postion}px)`;
-        this.curPos = this.curPos + 1;
-      }
-    }
-    ,
-
-    touch_start(event) {
-      this.start_x = event.touches[0].pageX;
-    }
-    ,
-
-    touch_end(event) {
-      this.end_x = event.changedTouches[0].pageX;
-      if (this.start_x > this.end_x) this.next();
-      else this.prev();
     }
   }
 }
