@@ -980,39 +980,13 @@ export default {
   }, created() {
     this.diffDay()
   },
-  computed: {
-    getImageWidth: () => {
-      const imgWidth = document.querySelector(".images").offsetWidth;
-      return imgWidth;
-    },
-  },
   mounted() {
-    // this.test()
     console.log(this.Dday)
     this.nowLink = document.location.href;
-    console.log(this.$refs.getData)
-    console.log(this.$refs.getData1)
     this.copyData.push(this.$refs.getData.innerHTML);
     this.copyData.push(this.$refs.getData1.innerHTML);
-    this.IMAGE_WIDTH = this.getImageWidth;
-    this.images = document.querySelector(".images");
-    this.images.addEventListener("touchstart", this.touch_start);
-    this.images.addEventListener("touchend", this.touch_end);
   },
   methods: {
-    // test() {
-    //   const eventCard = document.getElementById("event-card");
-    //
-    //
-    //   eventCard.addEventListener("touchmove",function () {
-    //     document.body.style.overflow = "hidden";
-    //   })
-    //   eventCard.addEventListener("touchend",function () {
-    //     document.body.style.overflow = "auto";
-    //   })
-    //
-    //
-    // },
     Call() {
       this.calling === !true ? this.calling = true : this.calling = false
     },
