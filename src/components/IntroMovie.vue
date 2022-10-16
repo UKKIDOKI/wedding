@@ -949,7 +949,7 @@ export default {
   name: "Main",
   components: {
     Carousel,
-    'Map': () => import('@/components/Map'),
+    // 'Map': () => import('@/components/Map'),
   },
   data() {
     return {
