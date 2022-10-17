@@ -83,6 +83,7 @@ export default {
       });
       // 지도에 마커를 표시합니다
       map.draggable = false;
+      // map.setDraggable(false);
       marker.setMap(map);
     },
     makeUrls() {
