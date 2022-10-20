@@ -1,0 +1,84 @@
+.parentContactPopup {
+    margin: 0 15px;
+    max-height: 80% !important;
+    min-height: 200px;
+    min-width: 300px
+}
+
+.q-dialog__backdrop {
+    -webkit-backdrop-filter: blur(3px) !important;
+    backdrop-filter: blur(3px) !important;
+    background-color: #1d1d1db2
+}
+
+.q-dialog__inner--minimized {
+    padding: 5px
+}
+
+.swiper {
+    background-color: initial;
+    box-shadow: 0 2px 4px -1px #0000, 0 4px 5px #0000, 0 1px 10px #0000 !important;
+    height: 100%;
+    max-height: 600px !important;
+    max-width: 500px !important;
+    width: 100%
+}
+
+.mySwiper {
+    box-sizing: border-box;
+    height: 20%;
+    padding: 10px 0
+}
+
+.mySwiper .swiper-slide {
+    height: 100%;
+    opacity: .4;
+    width: 25%
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1
+}
+
+.swiper-slide .thumbs img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%
+}
+
+.swiper-slide {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center
+}
+
+.swiper-pagination {
+    bottom: 20px;
+    width: 100%
+}
+
+.swiper-button-next, .swiper-button-prev {
+    bottom: 20px;
+    font-weight: 800;
+    padding: 10px;
+    top: auto;
+    z-index: 20
+}
+
+.swiper-button-next {
+    left: auto;
+    right: 40px
+}
+
+.swiper-button-prev {
+    left: 40px;
+    right: auto
+}
+
+:root {
+    --swiper-navigation-size: 15px;
+    --swiper-theme-color: #5f5859;
+}
