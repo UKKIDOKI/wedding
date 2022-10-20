@@ -897,6 +897,7 @@
                   </div>
                 </div>
               </div>
+              <ChatAdd/>
             </div><!----><!----><!----><!----><!---->
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
                  style="order:99;margin-left:0;margin-right:0;">
@@ -937,6 +938,7 @@
 
 <script>
 import Carousel from "../components/Carousel";
+import ChatAdd from "@/components/ChatAdd";
 import Kimage from "../assets/kakao-pay-black.c698e475.png"
 import image1 from "../assets/gallery/HYW09498.jpg"
 import image2 from "../assets/gallery/HYW09305.jpg"
@@ -949,6 +951,7 @@ export default {
   name: "Main",
   components: {
     Carousel,
+    ChatAdd,
     'Map': () => import('@/components/Map'),
   },
   data() {
