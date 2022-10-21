@@ -897,8 +897,8 @@
                   </div>
                 </div>
               </div>
-              <ChatAdd/>
             </div><!----><!----><!----><!----><!---->
+            <ChatAdd/>
             <div class="q-card q-card--square no-border-radius q-card--flat no-shadow wrapper"
                  style="order:99;margin-left:0;margin-right:0;">
               <div class="row t-bg-main q-pt-sm"
