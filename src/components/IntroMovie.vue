@@ -937,8 +937,8 @@
 
 
 <script>
-import Carousel from "../components/Carousel";
-import ChatAdd from "@/components/ChatAdd";
+import Carousel from "./VantImageView";
+import ChatAdd from "@/components/ChatAddView";
 import Kimage from "../assets/kakao-pay-black.c698e475.png"
 import image1 from "../assets/gallery/HYW09498.jpg"
 import image2 from "../assets/gallery/HYW09305.jpg"
@@ -1062,41 +1062,4 @@ export default {
   overflow: hidden;
 }
 
-.images {
-  position: relative;
-  display: flex;
-  height: auto;
-  transition: transform 0.5s;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  max-width: 2000px;
-  max-height: 2000px;
-}
-
-.image-circle-wrapper {
-  display: flex;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -18px);
-}
-
-.image-circle {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid #d2d2d2;
-  margin-right: 12px;
-}
-
-.image-circle:last-child {
-  margin-right: 0;
-}
-
-.image-circle.activeImg {
-  background-color: #404040;
-}
 </style>

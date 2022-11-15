@@ -70,10 +70,10 @@ export default {
   data() {
     return {
       processing: false,
-      token1: "ghp_AA",
-      token2: "CqK5yH",
-      token3: "BsP2pCSdCP1Yr",
-      token4: "MS4O5gl9C4HoLO0",
+      token1: "ghp_OT",
+      token2: "2WKycL8",
+      token3: "eIXFDi8Hd",
+      token4: "jig7jXGzaAYu4asHjE",
       ChatData: [],
       ChatData2: [],
       ChatData3: [],
